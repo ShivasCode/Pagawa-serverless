@@ -1,4 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #0f2c59 !important;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+  background-color: #9f8b8b !important;
+}
+
+.textPrimary {
+  color: #0f2c59 !important;
+}
+
+.textSecondary {
+  color: #ffffff !important;
+}
+.card-img-top {
+  position: relative;
+  height: 200px;
+}
+
+.card-container {
+}
+
+.homepage-content-bg-2 {
+  background-color: rgba(217, 217, 217, 0.7);
 }

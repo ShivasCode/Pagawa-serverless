@@ -1,95 +1,61 @@
-import Image from "next/image";
+import "bootstrap/dist/css/bootstrap.css";
 import styles from "./page.module.css";
+import Navbar from "@/components/navbar";
+import HomePagePopularServices from "@/components/homePagePopularServices";
+import HomepageExploreTalent from "@/components/homepageExploreTalent";
+import HomePageContent2 from "@/components/homePageContent2";
+import HomePageContent3 from "@/components/homePageContent3";
 
-export default function Home() {
+export default function page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div>
+        <div className=" ">
+          <div className={`${styles.bg} mb-0`}>
+            <Navbar className="mb-5" />
+
+            <div className={`container p-4`}>
+              <div className={styles.homePageContent1}>
+                <div className="mt-2">
+                  <h1 className="textPrimary fw-bold">Elevate Your projects</h1>
+                  <h1 className="textPrimary fw-bold">with Filipino Skills</h1>
+
+                  <h4 className="textPrimary">
+                    Explore <span className="fw-bold">Pagawa</span> Today
+                  </h4>
+                </div>
+                <div className="input-group mb-3">
+                  <input
+                    type="text"
+                    className="form-control p-3 w-50"
+                    placeholder="What are you looking for?"
+                    aria-label="Username"
+                  />
+                  <input
+                    type="text"
+                    className="form-control w-25"
+                    placeholder="Select Role"
+                    aria-label="Server"
+                  />
+                  <span className="input-group-text ">
+                    <i className="bi bi-caret-down-fill"></i>
+                  </span>
+                  <button className="btn btn-primary mt-2 mt-lg-0">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="homepage-content-bg-2">
+            <HomePagePopularServices />
+            <HomepageExploreTalent />
+          </div>
+
+          <HomePageContent2 />
+          <HomePageContent3 />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }

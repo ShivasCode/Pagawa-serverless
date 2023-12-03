@@ -1,0 +1,32 @@
+.bg {
+  background-color: #fff;
+  height: 100vh;
+  color: black;
+  width: 100%;
+}
+
+.containerCard {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+
+.loginForm div {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .bg {
+    background-color: rgba(15, 44, 89, 1);
+    height: 100vh;
+    color: white;
+    width: 100%;
+  }
+
+  .containerCard {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    color: black;
+  }
+}
