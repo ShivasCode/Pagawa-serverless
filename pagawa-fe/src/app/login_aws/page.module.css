@@ -1,0 +1,32 @@
+.bg {
+  background-color: #fff;
+  height: 100vh;
+  color: black;
+  width: 100%;
+}
+
+.containerCard {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+
+.loginForm div {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .bg {
+    background-color: rgba(248, 240, 229, 1);
+    height: 100vh;
+    color: black;
+    width: 100%;
+  }
+  .containerCard {
+    width: 50%;
+    margin: auto;
+  }
+  .form-control [type="text"] {
+    outline: 2px solid black;
+  }
+}

@@ -30,3 +30,14 @@
 .homepage-content-bg-2 {
   background-color: rgba(217, 217, 217, 0.7);
 }
+
+.bg-alt {
+  background-color: #f0efec;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+.width-90 {
+  width: 50%;
+}

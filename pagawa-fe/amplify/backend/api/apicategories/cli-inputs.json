@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "paths": {
+    "/categories": {
+      "name": "/categories",
+      "lambdaFunction": "pagawalambda",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "read"
+        ]
+      }
+    }
+  }
+}

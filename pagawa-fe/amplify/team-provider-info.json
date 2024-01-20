@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pagawaamp-dev-170145-authRole",
+      "UnauthRoleArn": "arn:aws:iam::842829779001:role/amplify-pagawaamp-dev-170145-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::842829779001:role/amplify-pagawaamp-dev-170145-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-pagawaamp-dev-170145-deployment",
+      "UnauthRoleName": "amplify-pagawaamp-dev-170145-unauthRole",
+      "StackName": "amplify-pagawaamp-dev-170145",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:842829779001:stack/amplify-pagawaamp-dev-170145/73dc1ca0-9671-11ee-bbd5-0eb250581a03",
+      "AmplifyAppId": "d2sutet3px0eb",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-pagawaamp-dev-170145-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "pagawalambda": {
+          "deploymentBucketName": "amplify-pagawaamp-dev-170145-deployment",
+          "s3Key": "amplify-builds/pagawalambda-45557939457848486679-build.zip"
+        },
+        "pagawacustomer": {
+          "deploymentBucketName": "amplify-pagawaamp-dev-170145-deployment",
+          "s3Key": "amplify-builds/pagawacustomer-753938696a6c5144722b-build.zip"
+        }
+      },
+      "auth": {
+        "pagawaamp": {}
+      },
+      "api": {
+        "apipagawa": {},
+        "apicategories": {},
+        "apicustomer": {}
+      }
+    }
+  }
+}
