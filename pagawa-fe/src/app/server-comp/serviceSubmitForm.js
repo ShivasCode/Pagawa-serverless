@@ -3,9 +3,12 @@ import { get, post } from "aws-amplify/api/server";
 import { runWithAmplifyServerContext } from "../runWithAmplifyServerContextRunner/amplifyServerUtils";
 import { cookies } from "next/headers";
 
-export async function onSubmit(event) {
+export async function onSubmit(images, event) {
+  // console.log(event);
   // event.preventDefault();
   try {
+    const formData = new FormData();
+
     const rawFormData = {
       title: event.get("title"),
       price: event.get("price"),
@@ -15,9 +18,10 @@ export async function onSubmit(event) {
       skills: event.get("skills"),
       country: event.get("country"),
       service_description: event.get("service_description"),
+      images: images,
       routeKey: "POST /services",
     };
-
+    console.log(rawFormData);
     const postOperation = await runWithAmplifyServerContext({
       nextServerContext: { cookies },
       operation: async (contextSpec) =>

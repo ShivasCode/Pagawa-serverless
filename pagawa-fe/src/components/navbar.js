@@ -1,7 +1,14 @@
+"use client";
+
 import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "./navbar.module.css";
 import Script from "next/script";
+
+import { useRouter } from "next/navigation";
+
 export default function navbar() {
+  const router = useRouter();
+
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
@@ -56,7 +63,7 @@ export default function navbar() {
               </li>
             </ul>
             <div className="mb-2 mb-lg-0 me-3 textPrimary fw-bold">
-              <a>Become a freelancer</a>
+              <a onClick={() => router.push("/login")}>Become a freelancer</a>
             </div>
             <div className="mb-2 mb-lg-0 me-3 textPrimary fw-bold">
               <a>Sign in</a>
